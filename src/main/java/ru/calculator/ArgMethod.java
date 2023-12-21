@@ -8,5 +8,8 @@ public class ArgMethod {
         String name = "Java";
         int age = 6;
         ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
     }
 }
