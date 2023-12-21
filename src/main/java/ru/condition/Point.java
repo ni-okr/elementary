@@ -13,6 +13,6 @@ public class Point {
 
     public static void main(String[] args) {
         double result = Point.distance(105, 29, 32, 41);
-        System.out.println("result (105, 32) to (29, 41) = " + result);
+        System.out.println("result (105, 29) to (32, 41) = " + result);
     }
 }
