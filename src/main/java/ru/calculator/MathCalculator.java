@@ -1,9 +1,6 @@
 package ru.calculator;
 
-import static ru.math.MathFunction.multiply;
-import static ru.math.MathFunction.sum;
-import static ru.math.MathFunction.minus;
-import static ru.math.MathFunction.division;
+import static ru.math.MathFunction.*;
 
 public class MathCalculator {
     public static double sumAndMinusAndDivision(double first, double second) {
