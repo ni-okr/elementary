@@ -30,5 +30,28 @@ public class Converter {
         System.out.println("140 euro are " + rubleE + " ruble.");
         System.out.println("140 rubles are " + dollar + " dollar.");
         System.out.println("140 dollar are " + dollarR + " rubles.");
+        System.out.println();
+        System.out.println("Тесты на валидацию конвертации");
+// кейс rubleToEuro
+        float in = 140;
+        float expectedRE = 1.4f;
+        float outRE = Converter.rubleToEuro(in);
+        boolean passedRE = expectedRE == outRE;
+        System.out.println("проверка rubleToEuro : " + passedRE);
+// кейс euroToRuble
+        float expectedER = 14000.0f;
+        float outER = Converter.euroToRuble(in);
+        boolean passedER = expectedER == outER;
+        System.out.println("проверка euroToRuble : " + passedER);
+// кейс rubleToDollar
+        float expectedRD = 1.5555556f;
+        float outRD = Converter.rubleToDollar(in);
+        boolean passedRD = expectedRD == outRD;
+        System.out.println("проверка rubleToDollar : " + passedRD);
+// кейс dollarToRuble
+        float expectedDR = 12600.0f;
+        float outDR = Converter.dollarToRuble(in);
+        boolean passedDR = expectedDR == outDR;
+        System.out.println("проверка dollarToRuble : " + passedDR);
     }
 }
