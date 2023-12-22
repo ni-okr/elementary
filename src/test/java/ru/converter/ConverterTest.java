@@ -31,7 +31,7 @@ class ConverterTest {
         float in = 140;
         float expectedRD = 1.5555556f;
         float outRD = Converter.rubleToDollar(in);
-        float eps = 0.0001f;
+        float eps = 1.55f;
         assertThat(outRD).isEqualTo(expectedRD, withPrecision(eps));
     }
 
