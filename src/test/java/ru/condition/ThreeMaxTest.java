@@ -1,6 +1,9 @@
 package ru.condition;
+
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
+
 class ThreeMaxTest {
     @Test
     void firstMax() {
@@ -11,6 +14,7 @@ class ThreeMaxTest {
         int expected = 10;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     void secondMax() {
         int first = 10;
@@ -20,6 +24,7 @@ class ThreeMaxTest {
         int expected = 50;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     void thirdMax() {
         int first = 1;
@@ -29,6 +34,7 @@ class ThreeMaxTest {
         int expected = 100;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     void allEq() {
         int first = 1;
@@ -38,6 +44,7 @@ class ThreeMaxTest {
         int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     void firstEqSecond() {
         int first = 10;
@@ -47,6 +54,7 @@ class ThreeMaxTest {
         int expected = 10;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     void firstEqThird() {
         int first = 100;
@@ -56,6 +64,7 @@ class ThreeMaxTest {
         int expected = 100;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     void secondEqThird() {
         int first = 1;
