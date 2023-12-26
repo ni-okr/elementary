@@ -125,4 +125,15 @@ public class ChessBoardTest {
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenX10Y15X23Y22ThenWayIs3() {
+        int x1 = 0;
+        int y1 = 5;
+        int x2 = 3;
+        int y2 = 2;
+        int result = ChessBoard.way(x1, y1, x2, y2);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
 }
