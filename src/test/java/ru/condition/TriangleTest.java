@@ -24,7 +24,7 @@ class TriangleTest {
     }
 
     @Test
-    void whenNotExist223ThenTrue() {
+    void whenExist223ThenTrue() {
         double ab = 2.0;
         double ac = 2.0;
         double bc = 3.0;
