@@ -7,9 +7,9 @@ public class Slash {
                 boolean left = (cell == row);
                 boolean right = (cell == size - row - 1);
                 if (left) {
-                    System.out.print(row);
+                    System.out.print("O");
                 } else if (right) {
-                    System.out.print(cell);
+                    System.out.print("O");
                 } else {
                     System.out.print(" ");
                 }
@@ -23,6 +23,6 @@ public class Slash {
         System.out.println("Draw by 3");
         draw(3);
         System.out.println("Draw by 5");
-        draw(5);
+        draw(7);
     }
 }
