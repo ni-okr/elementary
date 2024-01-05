@@ -3,7 +3,7 @@ package ru.array;
 public class SwitchArray {
     public static int[] swap(int[] array, int source, int dest) {
         int temp = array[source];
-        array[source] = array[array.length - 1];
+        array[source] = array[dest];
         array[dest] = temp;
         return array;
     }
