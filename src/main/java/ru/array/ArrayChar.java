@@ -3,10 +3,10 @@ package ru.array;
 public class ArrayChar {
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
-        for (int index = 0; index < pref.length - 1; index++) {
-            if (pref[index + 1] != word[index + 1]) {
+        for (int index = 0; index < pref.length; index++) {
+            if (pref[index] != word[index]) {
                 result = false;
-                break;
+//                break;
             }
         }
         return result;
