@@ -2,9 +2,10 @@ package ru.array;
 
 public class EqLast {
     public static boolean check(int[] left, int[] right) {
+        boolean rsl = true;
         if (left[left.length - 1] != right[right.length - 1]) {
-            return false;
+            rsl = false;
         }
-        return true;
+        return rsl;
     }
 }
