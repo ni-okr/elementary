@@ -49,4 +49,26 @@ class FindLoopTest {
         int expected = -1;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenDiapasonStart1Finish11ThenMinus1() {
+        int[] data = new int[]{5, 10, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+        int el = 82;
+        int start = 1;
+        int finish = 11;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = -1;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenDiapasonStart1Finish11Then7() {
+        int[] data = new int[]{5, 10, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+        int el = 8;
+        int start = 1;
+        int finish = 11;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 7;
+        assertThat(result).isEqualTo(expected);
+    }
 }
