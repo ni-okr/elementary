@@ -2,10 +2,10 @@ package ru.array;
 
 public class SortSelected {
     public static int[] sort(int[] data) {
-        for (int index = 0; index < data.length - 1; index++) {
-            int min = MinDiapason.findMin(data, index, data.length - 1);
-            index = FindLoop.indexInRange(data, min, index, data.length - 1);
-            int[] swap = SwitchArray.swap(data, min - 1, index);
+        for (int i = 0; i < data.length; i++) {
+            int min = MinDiapason.findMin(data, i, data.length - 1);
+            int index = FindLoop.indexInRange(data, min, i, data.length - 1);
+            SwitchArray.swap(data, index, i);
         }
         return data;
     }
